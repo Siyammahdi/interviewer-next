@@ -1,9 +1,7 @@
 import React from "react";
 import InterviewCard from "@/components/homepage/interviewCard";
-import Footer from "@/components/navigation/Footer";
-import TeamBlogs from "@/components/homepage/team-blogs";
-import DemandingSkills from "@/components/homepage/demanding-skills";
-import ExploreJob from "@/components/homepage/explore-job";
+
+
 import Answer from "@/components/homepage/answer-voice";
 import AnswerText from "@/components/homepage/answer-text";
 import Complete from "@/components/homepage/complete";
@@ -12,18 +10,15 @@ import AnswerFile from "@/components/homepage/answer-video";
 
 const Interviewers = () => {
 	return (
-		<section className="bg-[#F9FAFB]">
-			<div className="flex gap-5 max-w-7xl mx-auto ">
-				<div className="w-8/12 space-y-5">
+		<section className="">
+			<div className="">
+				<div className="space-y-5">
 					{data.map((item) => (
 						<InterviewCard item={item} />
 					))}
 				</div>
-				<div className="w-4/12">
-					<ExploreJob />
-					<DemandingSkills />
-					<TeamBlogs />
-					<Footer />
+				<div>
+					
 				</div>
 			</div>
 			<Answer />
