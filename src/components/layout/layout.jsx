@@ -1,11 +1,14 @@
 import React from "react";
-import Menubar from "@/components/navigation/menubar";
+import Navbar from "../navigation/Navbar";
+import Footer from "../navigation/Footer";
 
 export default function Layout({ children }) {
     return (
-        <div className="min-h-screen relative">
-                <Menubar isMobileMenu={false} />
-                <main>{children}</main>
+        <div className="">
+            {/* <Menubar isMobileMenu={false} /> */}
+            <Navbar></Navbar>
+            <main>{children}</main>
+            <Footer></Footer>
         </div>
     );
 }
