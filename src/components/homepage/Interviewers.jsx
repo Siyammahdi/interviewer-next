@@ -2,11 +2,7 @@ import React from "react";
 import InterviewCard from "@/components/homepage/interviewCard";
 
 
-import Answer from "@/components/homepage/answer-voice";
-import AnswerText from "@/components/homepage/answer-text";
-import Complete from "@/components/homepage/complete";
-import Dashboard from "@/components/homepage/dashboard";
-import AnswerFile from "@/components/homepage/answer-video";
+
 
 const Interviewers = () => {
 	return (
@@ -21,13 +17,7 @@ const Interviewers = () => {
 					
 				</div>
 			</div>
-			<Answer />
-			{/* <AnswerText /> */}
-			<AnswerFile />
-			<Complete />
-			{data.map((item) => (
-				<Dashboard item={item} />
-			))}
+			
 		</section>
 	);
 };
@@ -36,7 +26,8 @@ export default Interviewers;
 
 const data = [
 	{
-		avatar: "https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg",
+		avatar:
+			"https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg",
 		name: "John Doe",
 		date: "2024-03-14",
 		title: "Software Engineer",
@@ -49,7 +40,8 @@ const data = [
 		video_link: "https://example.com/video1",
 	},
 	{
-		avatar: "https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg",
+		avatar:
+			"https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg",
 		name: "Jane Smith",
 		date: "2024-03-15",
 		title: "Marketing Manager",
@@ -62,7 +54,8 @@ const data = [
 		video_link: "https://example.com/video2",
 	},
 	{
-		avatar: "https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg",
+		avatar:
+			"https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg",
 		name: "Alex Johnson",
 		date: "2024-03-16",
 		title: "Data Scientist",
@@ -75,7 +68,8 @@ const data = [
 		video_link: "https://example.com/video3",
 	},
 	{
-		avatar: "https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg",
+		avatar:
+			"https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg",
 		name: "Emily Brown",
 		date: "2024-03-17",
 		title: "Graphic Designer",
@@ -88,7 +82,8 @@ const data = [
 		video_link: "https://example.com/video4",
 	},
 	{
-		avatar: "https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg",
+		avatar:
+			"https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg",
 		name: "Michael Garcia",
 		date: "2024-03-18",
 		title: "Financial Analyst",
@@ -101,13 +96,13 @@ const data = [
 		video_link: "https://example.com/video5",
 	},
 	{
-		avatar: "https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg",
+		avatar:
+			"https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg",
 		name: "Sophia Martinez",
 		date: "2024-03-19",
 		title: "Human Resources Manager",
 		company_name: "HR Solutions Co.",
-		educational_req:
-			"Bachelor's degree in Human Resources or related field",
+		educational_req: "Bachelor's degree in Human Resources or related field",
 		experience_in_year: 6,
 		deadline: "2024-04-25",
 		total_applied: 35,
@@ -115,7 +110,8 @@ const data = [
 		video_link: "https://example.com/video6",
 	},
 	{
-		avatar: "https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg",
+		avatar:
+			"https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg",
 		name: "William Wilson",
 		date: "2024-03-20",
 		title: "Product Manager",
