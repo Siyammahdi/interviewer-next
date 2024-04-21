@@ -3,6 +3,7 @@ import { IoLocationSharp } from "react-icons/io5";
 import { ImFilter } from "react-icons/im";
 
 const Dashboard = () => {
+  
 	const rows = elements.map((element, index) => (
 		<Table.Tr key={index}>
 			<Table.Td>
@@ -92,6 +93,7 @@ const Dashboard = () => {
 		</section>
 	);
 };
+
 
 export default Dashboard;
 

@@ -18,10 +18,10 @@ export default function Home() {
 			<ExploreSection />
 			<div className="bg-bgPrimary py-10">
 				<div className="flex gap-5 max-w-7xl mx-auto ">
-					<div className="w-8/12">
+					<div className="w-3/4">
 						<Interviewers></Interviewers>
 					</div>
-					<div className="w-4/12">
+					<div className="w-1/4">
 						<ExploreJob />
 						<DemandingSkills />
 						<TeamBlogs />

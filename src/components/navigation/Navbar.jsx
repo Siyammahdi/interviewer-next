@@ -3,19 +3,15 @@ import { Button, TextInput } from "@mantine/core";
 import Section from "../section/index";
 import { IoSearch } from "react-icons/io5";
 import Image from "next/image";
-import logo from "../../../public/logo.png"
+import logo from "../../../public/logo.png";
 
 const Navbar = () => {
 	return (
-        <nav className="max-w-7xl mx-auto flex items-center justify-between my-6">
-            <Image src={logo} alt="logo"></Image>
+		<nav className="max-w-7xl mx-auto flex items-center justify-between my-6">
+			<Image src={logo} alt="logo"></Image>
 			{/* <Image radius="md" h={25} src="/logo.png" /> */}
 			<div className="relative" style={{ width: "45%", cursor: "pointer" }}>
-				<TextInput
-					size="md"
-					radius="xl"
-					placeholder="Search your job..."
-				/>
+				<TextInput size="md" radius="xl" placeholder="Search your job..." />
 				<IoSearch className="absolute border top-1/3 right-5 text-xl text-gray-500" />
 			</div>
 			<div className="space-x-4">

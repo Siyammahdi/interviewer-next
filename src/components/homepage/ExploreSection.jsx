@@ -15,7 +15,7 @@ const ExploreSection = () => {
 					<p className="text-sm my-1 text-[#868788]">
 						Read stories, thinking, and expertise from writers.
 					</p>
-				</div>
+        </div>
 				<div className="flex justify-between w-full">
 					{data.map((item) => (
 						<div key={item.id}>
