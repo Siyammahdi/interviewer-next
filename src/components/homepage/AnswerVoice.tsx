@@ -5,12 +5,10 @@ import { FaClockRotateLeft } from "react-icons/fa6";
 import { CgSandClock } from "react-icons/cg";
 import { FaArrowRotateLeft } from "react-icons/fa6";
 import { AudioRecorder } from 'react-audio-voice-recorder';
-import Section from '../section';
-import { HiOutlineDotsHorizontal } from "react-icons/hi";
 import { RiQuestionAnswerLine } from "react-icons/ri";
 
 
-const addAudioElement = (blob) => {
+const addAudioElement = (blob: Blob) => {
     const url = URL.createObjectURL(blob);
     const audio = document.createElement("audio");
     audio.src = url;
@@ -20,7 +18,7 @@ const addAudioElement = (blob) => {
 
 const AnswerVoice = () => {
     return (
-			<Section className="max-w-7xl mx-auto w-screen">
+			<section className="">
 				<div className="text-center w-1/3 mx-auto text-gray-500 text-sm">
 					<Title className="my-10" order={3}>
 						What are some of your leadership experiences?
@@ -93,7 +91,7 @@ const AnswerVoice = () => {
 						</div>
 					</div>
 				</div>
-			</Section>
+			</section>
 		);
 };
 

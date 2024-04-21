@@ -4,14 +4,13 @@ import { LuClock3 } from 'react-icons/lu';
 import { FaClockRotateLeft } from "react-icons/fa6";
 import { CgSandClock } from "react-icons/cg";
 import { FaArrowRotateLeft } from "react-icons/fa6";
-import Section from '../section';
 import { RiQuestionAnswerLine } from "react-icons/ri";
 import { FiUploadCloud } from "react-icons/fi";
 
 
 const AnswerFile = () => {
     return (
-        <Section>
+        <section>
             <div className='text-center w-1/3 mx-auto text-gray-500 text-sm'>
                 <Title className='my-10' order={3}>What are some of your leadership experiences?</Title>
                 <div>
@@ -63,7 +62,7 @@ const AnswerFile = () => {
                     </div>
                 </div>
             </div>
-        </Section>
+        </section>
     );
 };
 

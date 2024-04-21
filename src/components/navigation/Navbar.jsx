@@ -7,7 +7,7 @@ import logo from "../../../public/logo.png";
 
 const Navbar = () => {
 	return (
-		<nav className="max-w-7xl mx-auto flex items-center justify-between my-6">
+		<nav className="flex items-center justify-between my-6">
 			<Image src={logo} alt="logo"></Image>
 			{/* <Image radius="md" h={25} src="/logo.png" /> */}
 			<div className="relative" style={{ width: "45%", cursor: "pointer" }}>

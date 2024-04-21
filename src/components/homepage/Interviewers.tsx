@@ -1,8 +1,19 @@
 import React from "react";
-import InterviewCard from "@/components/homepage/interviewCard";
+import InterviewCard from "@/components/homepage/InterviewCard";
 
-
-
+interface Interviewers {
+	avatar: string;
+	name: string;
+	date: string;
+	title: string;
+	company_name: string;
+	educational_req: string;
+	experience_in_year: number;
+	deadline: string;
+	total_applied: number;
+	job_location: string;
+	video_link: string;
+}
 
 const Interviewers = () => {
 	return (
@@ -13,18 +24,15 @@ const Interviewers = () => {
 						<InterviewCard item={item} />
 					))}
 				</div>
-				<div>
-					
-				</div>
+				<div></div>
 			</div>
-			
 		</section>
 	);
 };
 
 export default Interviewers;
 
-const data = [
+const data : Interviewers[] = [
 	{
 		avatar:
 			"https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg",

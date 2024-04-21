@@ -1,11 +1,10 @@
 import React from "react";
 import { Title, Image } from "@mantine/core";
 import { Button } from "@mantine/core";
-import Section from "../section/index";
 
 const Hero = () => {
 	return (
-		<Section className="max-w-7xl mx-auto">
+		<section className="">
 			<div className="flex items-center mb-20">
 				<div className="w-1/2 space-y-20">
 					<Title
@@ -34,7 +33,7 @@ const Hero = () => {
 					/>
 				</div>
 			</div>
-		</Section>
+		</section>
 	);
 };
 

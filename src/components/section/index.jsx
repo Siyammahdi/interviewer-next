@@ -3,7 +3,7 @@ import React from 'react';
 const Section = ({children, Bgcolor}) => {
     return (
         <section style={{backgroundColor: Bgcolor}} >
-            <div className="max-w-[1100px] mx-auto">
+            <div className="max-w-7xl mx-auto">
                 {children}
             </div>
         </section>

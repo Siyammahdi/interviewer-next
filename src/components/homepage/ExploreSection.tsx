@@ -3,19 +3,25 @@ import React from "react";
 import Section from "../section/index";
 import Link from "next/link";
 
+interface Data {
+	id: number;
+	title: string;
+	icon: string;
+	body: string;
+	backgroundColor: string;
+}
 const ExploreSection = () => {
-    
 	return (
 		// why using this section when I can just add background color using className
 		// <Section Bgcolor={"#F9FAFB"}>
 		<section className="bg-bgPrimary py-10">
-			<div className="max-w-7xl mx-auto ">
+			<div className="">
 				<div className="text-center mb-8">
 					<Title order={4}>EXPLORE WHAT YOU NEED</Title>
 					<p className="text-sm my-1 text-[#868788]">
 						Read stories, thinking, and expertise from writers.
 					</p>
-        </div>
+				</div>
 				<div className="flex justify-between w-full">
 					{data.map((item) => (
 						<div key={item.id}>
@@ -23,8 +29,7 @@ const ExploreSection = () => {
 								<div className="flex gap-5">
 									<div
 										style={{
-											backgroundColor:
-												item.backgroundColor,
+											backgroundColor: item.backgroundColor,
 										}}
 										className="px-1 rounded-md items-center flex"
 									>
@@ -32,9 +37,7 @@ const ExploreSection = () => {
 									</div>
 									<Title order={3}>{item.title}</Title>
 								</div>
-								<p className="text-sm text-[#868788]">
-									{item.body}
-								</p>
+								<p className="text-sm text-[#868788]">{item.body}</p>
 								{/* {hovered ? (
 									<Link
 										href={"/"}
@@ -57,7 +60,7 @@ const ExploreSection = () => {
 
 export default ExploreSection;
 
-const data = [
+const data: Data[] = [
 	{
 		id: 1,
 		title: "AI",

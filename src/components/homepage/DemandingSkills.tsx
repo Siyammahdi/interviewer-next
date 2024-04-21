@@ -2,6 +2,11 @@ import { Button, Title } from "@mantine/core";
 import React from "react";
 import { RiArrowDropDownLine } from "react-icons/ri";
 
+interface Data {
+	text: string;
+	name: string;
+	reads: number;
+}
 const DemandingSkills = () => {
 	return (
 		<div className="border border-solid border-gray-300 rounded-xl p-5 my-10">
@@ -48,7 +53,7 @@ const DemandingSkills = () => {
 
 export default DemandingSkills;
 
-const data = [
+const data: Data[] = [
 	{
 		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.....",
 		name: "Alice",
