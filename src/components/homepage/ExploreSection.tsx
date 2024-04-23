@@ -15,7 +15,7 @@ const ExploreSection = () => {
 		// why using this section when I can just add background color using className
 		// <Section Bgcolor={"#F9FAFB"}>
 		<Section Bgcolor={"#f9fafb"}>
-			<div className="">
+			<div className="py-10">
 				<div className="text-center mb-8">
 					<Title order={4}>EXPLORE WHAT YOU NEED</Title>
 					<p className="text-sm my-1 text-[#868788]">

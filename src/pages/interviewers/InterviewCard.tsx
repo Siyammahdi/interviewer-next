@@ -5,13 +5,16 @@ import { LuClock3 } from "react-icons/lu";
 import { BsPeopleFill } from "react-icons/bs";
 import { BiSolidShoppingBags } from "react-icons/bi";
 import { GiGraduateCap } from "react-icons/gi";
-import Interviewers from "./Interviewers";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { InterviewersTypes } from "@/pages/interviewers";
 
 interface InterviewCardProps {
-	item: Interviewers; // Define the type of the 'item' prop
+	item: InterviewersTypes; // Define the type of the 'item' prop
 }
 const InterviewCard: React.FC<InterviewCardProps> = ({ item }) => {
 	const {
+		id,
 		avatar,
 		name,
 		date,
@@ -24,16 +27,25 @@ const InterviewCard: React.FC<InterviewCardProps> = ({ item }) => {
 		job_location,
 		video_link,
 	} = item;
+	const router = useRouter();
+	const handleClick = () => {
+		router.push(`/interviewers/${id}`);
+	};
 	return (
+		// <Link href={`/interviews/${id}`} className="no-underline">
 		<div className="border border-solid border-1 border-gray-300 rounded-2xl p-5 flex justify-between">
 			<div>
 				<div className="flex gap-3 items-center">
 					<Avatar src={avatar} alt="no image here" />
 					<p className="text-sm text-gray-600 font-bold">{name}</p>
-					<p className="text-xs text-gray-500 font-semibold">{date}</p>''
+					<p className="text-xs text-gray-500 font-semibold">{date}</p>
 				</div>
 				<div>
-					<Title order={4}>{title}</Title>
+					<button onClick={handleClick} className="bg-[#f9fafb] border-none cursor-pointer">
+						<Title order={4} className="text-black">
+							{title}
+						</Title>
+					</button>
 					<p className="text-[#00ABCE] text-sm font-semibold">{company_name}</p>
 
 					<div className="text-sm text-[#868788]">
@@ -79,6 +91,7 @@ const InterviewCard: React.FC<InterviewCardProps> = ({ item }) => {
 				Your browser does not support the video tag.
 			</video>
 		</div>
+		// </Link>
 	);
 };
 

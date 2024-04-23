@@ -1,7 +1,9 @@
 import React from "react";
-import InterviewCard from "@/components/homepage/InterviewCard";
+import InterviewCard from "./InterviewCard";
+// import InterviewCard from "@/components/homepage/InterviewCard";
 
-interface Interviewers {
+export interface InterviewersTypes {
+	id: number;
 	avatar: string;
 	name: string;
 	date: string;
@@ -17,14 +19,11 @@ interface Interviewers {
 
 const Interviewers = () => {
 	return (
-		<section className="">
-			<div className="">
-				<div className="space-y-5">
-					{data.map((item) => (
-						<InterviewCard item={item} />
-					))}
-				</div>
-				<div></div>
+		<section>
+			<div className="space-y-5">
+				{data.map((item) => (
+					<InterviewCard key={item.id} item={item} />
+				))}
 			</div>
 		</section>
 	);
@@ -32,8 +31,9 @@ const Interviewers = () => {
 
 export default Interviewers;
 
-const data : Interviewers[] = [
+const data: InterviewersTypes[] = [
 	{
+		id: 1,
 		avatar:
 			"https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg",
 		name: "John Doe",
@@ -48,6 +48,7 @@ const data : Interviewers[] = [
 		video_link: "https://example.com/video1",
 	},
 	{
+		id: 2,
 		avatar:
 			"https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg",
 		name: "Jane Smith",
@@ -62,6 +63,7 @@ const data : Interviewers[] = [
 		video_link: "https://example.com/video2",
 	},
 	{
+		id: 3,
 		avatar:
 			"https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg",
 		name: "Alex Johnson",
@@ -76,6 +78,7 @@ const data : Interviewers[] = [
 		video_link: "https://example.com/video3",
 	},
 	{
+		id: 4,
 		avatar:
 			"https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg",
 		name: "Emily Brown",
@@ -90,6 +93,7 @@ const data : Interviewers[] = [
 		video_link: "https://example.com/video4",
 	},
 	{
+		id: 5,
 		avatar:
 			"https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg",
 		name: "Michael Garcia",
@@ -104,6 +108,7 @@ const data : Interviewers[] = [
 		video_link: "https://example.com/video5",
 	},
 	{
+		id: 6,
 		avatar:
 			"https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg",
 		name: "Sophia Martinez",
@@ -118,6 +123,7 @@ const data : Interviewers[] = [
 		video_link: "https://example.com/video6",
 	},
 	{
+		id: 7,
 		avatar:
 			"https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg",
 		name: "William Wilson",
