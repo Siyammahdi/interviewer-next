@@ -9,7 +9,7 @@ interface Data {
 }
 const DemandingSkills = () => {
 	return (
-		<div className="border border-solid border-gray-300 rounded-xl p-5 my-10">
+		<section className="border border-solid border-gray-300 rounded-xl p-5 my-10">
 			<div className="flex justify-between items-center">
 				<Title order={5} className="text-[#10B5D7]">
 					Demanding Skills
@@ -47,7 +47,7 @@ const DemandingSkills = () => {
 					See More <RiArrowDropDownLine className="text-2xl" />
 				</Button>
 			</div>
-		</div>
+		</section>
 	);
 };
 

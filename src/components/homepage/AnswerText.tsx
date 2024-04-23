@@ -32,7 +32,7 @@ const AnswerText = () => {
 	});
 
 	return (
-		<section>
+		<Section Bgcolor={"#fff"}>
 			<div className="text-center w-1/3 mx-auto text-gray-500 text-sm">
 				<Title className="my-10" order={3}>
 					What are some of your leadership experiences?
@@ -141,7 +141,7 @@ const AnswerText = () => {
 					</div>
 				</div>
 			</div>
-		</section>
+		</Section>
 	);
 };
 

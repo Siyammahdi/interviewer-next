@@ -6,6 +6,7 @@ import { CgSandClock } from "react-icons/cg";
 import { FaArrowRotateLeft } from "react-icons/fa6";
 import { AudioRecorder } from 'react-audio-voice-recorder';
 import { RiQuestionAnswerLine } from "react-icons/ri";
+import Section from '../section';
 
 
 const addAudioElement = (blob: Blob) => {
@@ -18,7 +19,7 @@ const addAudioElement = (blob: Blob) => {
 
 const AnswerVoice = () => {
     return (
-			<section className="">
+			<Section Bgcolor={"#fff"}>
 				<div className="text-center w-1/3 mx-auto text-gray-500 text-sm">
 					<Title className="my-10" order={3}>
 						What are some of your leadership experiences?
@@ -91,7 +92,7 @@ const AnswerVoice = () => {
 						</div>
 					</div>
 				</div>
-			</section>
+			</Section>
 		);
 };
 

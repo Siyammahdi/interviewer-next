@@ -10,30 +10,14 @@ const ExploreJob = () => {
 		setShowAllButtons(!showAllButtons);
 	};
 
-	const buttons = [
-		"Programming",
-		"Technology",
-		"Writing",
-		"Self Improvement",
-		"RelationShips",
-		"Politics",
-		"Machine Learning",
-		"Data Science",
-		"Cybersecurity",
-		"Artificial Intelligence",
-		"Productivity",
-		"Communication Skills",
-		"Economics",
-		"Philosophy",
-		"Health and Wellness",
-	];
+
 
 	return (
 		<div>
 			<Title order={5} className="p-3">
-				Explore of related job to you
+				Job categories
 			</Title>
-			<div className="grid grid-cols-3 gap-2">
+			<div className="flex flex-wrap gap-2">
 				{buttons
 					.slice(
 						0,
@@ -79,3 +63,21 @@ const ExploreJob = () => {
 };
 
 export default ExploreJob;
+
+	const buttons = [
+		"Programming",
+		"Technology",
+		"Writing",
+		"Self Improvement",
+		"RelationShips",
+		"Politics",
+		"Machine Learning",
+		"Data Science",
+		"Cybersecurity",
+		"Artificial Intelligence",
+		"Productivity",
+		"Communication Skills",
+		"Economics",
+		"Philosophy",
+		"Health and Wellness",
+	];

@@ -1,10 +1,12 @@
 import React from "react";
-import { Title, Image } from "@mantine/core";
+import { Title } from "@mantine/core";
 import { Button } from "@mantine/core";
+import Section from "../section";
+import Image from "next/image";
 
 const Hero = () => {
 	return (
-		<section className="">
+		<Section Bgcolor={"#fff"}>
 			<div className="flex items-center mb-20">
 				<div className="w-1/2 space-y-20">
 					<Title
@@ -23,17 +25,17 @@ const Hero = () => {
 						Get Started
 					</Button>
 				</div>
-				<div className="w-1/2 grid grid-cols-2 gap-8 h-fit ">
+				<div className="">
 					<Image
-						h={350}
-						w={500}
-						radius="lg"
-						src="/svg/bannerGroup.svg"
-						style={{ objectFit: "contain", marginTop: "50px" }}
+						width={500}
+						height={350}
+            src="/svg/bannerGroup.svg"
+            alt="banner"
+						style={{ objectFit: "contain" }}
 					/>
 				</div>
 			</div>
-		</section>
+		</Section>
 	);
 };
 

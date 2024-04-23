@@ -1,6 +1,7 @@
 import { Table, Title } from "@mantine/core";
 import { IoLocationSharp } from "react-icons/io5";
 import { ImFilter } from "react-icons/im";
+import Section from "../section";
 interface Element {
 	companyName: string,
 	jobTitle: string,
@@ -34,7 +35,7 @@ const Dashboard = () => {
 	));
 
 	return (
-		<section>
+		<Section Bgcolor={"#fff"}>
 			<div className="my-32">
 				<Title order={2}>
 					UIUX Designer{" "}
@@ -97,7 +98,7 @@ const Dashboard = () => {
 					</Table>
 				</div>
 			</div>
-		</section>
+		</Section>
 	);
 };
 

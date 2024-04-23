@@ -2,10 +2,11 @@ import { Avatar, Title } from "@mantine/core";
 import React from "react";
 import { FaCheck } from "react-icons/fa6";
 import { AiOutlineAudio } from "react-icons/ai";
+import Section from "../section";
 
 const ShortlistedCard = () => {
 	return (
-		<section>
+		<Section Bgcolor={"#fff"}>
 			<div className="text-center mt-24">
 				<Title order={2}>Congratulations!</Title>
 				<p className=" text-sm text-gray-500 my-2">
@@ -40,7 +41,7 @@ const ShortlistedCard = () => {
 					</p>
 				</div>
 			</div>
-		</section>
+		</Section>
 	);
 };
 
