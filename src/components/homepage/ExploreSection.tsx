@@ -22,7 +22,7 @@ const ExploreSection = () => {
 						Read stories, thinking, and expertise from writers.
 					</p>
 				</div>
-				<div className="flex justify-between w-full">
+				<div className="flex gap-5 justify-between w-full">
 					{data.map((item) => (
 						<div key={item.id}>
 							<div className="border border-solid border-gray-300 rounded-xl p-5 max-w-[300px] h-[150px] hover:bg-[#f4f3f3] hover:shadow-lg">

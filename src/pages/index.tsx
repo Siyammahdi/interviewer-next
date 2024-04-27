@@ -4,35 +4,29 @@ import Interviewers from "../components/homepage/Interviewers";
 import ExploreJob from "@/components/homepage/ExploreJob";
 import TeamBlogs from "@/components/homepage/TeamBlogs";
 import DemandingSkills from "@/components/homepage/DemandingSkills";
-import AnswerVoice from "@/components/homepage/AnswerVoice";
 import AnswerText from "@/components/homepage/AnswerText";
-import ShortlistedCard from "@/components/homepage/ShortlistedCard";
-import Dashboard from "@/components/homepage/Dashboard";
-import AnswerFile from "@/components/homepage/AnswerFile";
 import Layout from "@/components/layout/layout";
+import Section from "@/components/section";
 
 export default function Home() {
-	return (
-		<Layout>
-			<Hero />
-			<ExploreSection />
-			<div className="bg-bgPrimary py-10">
-				<div className="flex gap-5 max-w-7xl mx-auto ">
-					<div className="w-3/4">
-						<Interviewers></Interviewers>
-					</div>
-					<div className="w-1/4">
-						<ExploreJob />
-						<DemandingSkills />
-						<TeamBlogs />
-					</div>
-				</div>
-			</div>
-			<AnswerVoice />
-			{/* <AnswerText /> */}
-			<AnswerFile />
-			<ShortlistedCard />
-			<Dashboard />
-		</Layout>
-	);
+  return (
+    <div className="max-w-6xl mx-auto">
+      <Layout>
+        <Hero />
+        <ExploreSection />
+        <div className="bg-bgPrimary py-10">
+          <div className="flex gap-5 max-w-7xl mx-auto ">
+            <div className="w-3/4">
+              <Interviewers></Interviewers>
+            </div>
+            <div className="w-1/4">
+              <ExploreJob />
+              <DemandingSkills />
+              <TeamBlogs />
+            </div>
+          </div>
+        </div>
+      </Layout>
+    </div>
+  );
 }

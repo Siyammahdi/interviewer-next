@@ -1,6 +1,7 @@
 import { Table, Title } from "@mantine/core";
 import { IoLocationSharp } from "react-icons/io5";
 import { ImFilter } from "react-icons/im";
+import Navbar from "@/components/navigation/Navbar";
 interface Element {
 	companyName: string,
 	jobTitle: string,
@@ -9,7 +10,7 @@ interface Element {
 	status: "Approved" | "Rejected",
 	score: number;
 }
-const Dashboard = () => {
+const InterviewList = () => {
   
 	const rows = elements.map((element, index) => (
 		<Table.Tr key={index}>
@@ -34,8 +35,9 @@ const Dashboard = () => {
 	));
 
 	return (
-		<section>
-			<div className="my-32">
+		<section className="max-w-6xl mx-auto">
+			<Navbar />
+			<div className="my-28">
 				<Title order={2}>
 					UIUX Designer{" "}
 					<span className="font-normal text-sm bg-gray-200 px-3 py-1 rounded-full">
@@ -102,7 +104,7 @@ const Dashboard = () => {
 };
 
 
-export default Dashboard;
+export default InterviewList;
 
 const elements : Element[] = [
 	{

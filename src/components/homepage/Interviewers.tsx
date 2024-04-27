@@ -19,7 +19,7 @@ const Interviewers = () => {
 	return (
 		<section className="">
 			<div className="">
-				<div className="space-y-5">
+				<div className="flex flex-col gap-6">
 					{data.map((item) => (
 						<InterviewCard item={item} />
 					))}
