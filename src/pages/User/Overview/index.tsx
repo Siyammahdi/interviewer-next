@@ -10,7 +10,14 @@ const Overview = () => {
   return (
     <section className="max-w-6xl mx-auto">
       <Navbar />
+      <div className="text-center mt-24">
+				<Title order={2}>Congratulations!</Title>
+				<p className=" text-sm text-gray-500 my-2">
+					Your application is short listed
+				</p>
+			</div>
       <div className="flex items-center justify-between pb-12 mt-20">
+        
         <div className="flex items-center">
           <Avatar src="/male-avatar.jpg" alt="no image here" h={60} w={60} />
           <div>
