@@ -1,5 +1,6 @@
 import Navbar from "@/components/navigation/Navbar";
 import { Table, Title } from "@mantine/core";
+import Link from "next/link";
 import { IoLocationSharp } from "react-icons/io5";
 import { RiArrowDropDownLine, RiDropdownList } from "react-icons/ri";
 interface Element {
@@ -15,8 +16,10 @@ const InterviewList = () => {
 	const rows = elements.map((element, index) => (
 		<Table.Tr key={index}>
 			<Table.Td>
+				<Link href={"/AdminPanel/Table"} className="no-underline">
 				<p className="font-bold text-gray-600 my-1">{element.jobTitle}</p>
 				<p className="text-xs my-1">{element.companyName}</p>
+				</Link>
 			</Table.Td>
 			<Table.Td>{element.applicationDate}</Table.Td>
 			<Table.Td>
