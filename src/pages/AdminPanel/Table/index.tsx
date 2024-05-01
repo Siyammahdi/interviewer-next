@@ -16,7 +16,7 @@ const InterviewList = () => {
 	const rows = elements.map((element, index) => (
 		<Table.Tr key={index}>
 			<Table.Td>
-				<Link href={"/AdminPanel/Overview"}>
+				<Link href={"/AdminPanel/Overview"} className="no-underline">
 				<p className="font-bold text-gray-600 my-1">{element.jobTitle}</p>
 				<p className="text-xs my-1">{element.companyName}</p>
 				</Link>
