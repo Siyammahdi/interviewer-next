@@ -72,7 +72,7 @@ const AnswerFile = () => {
             <Button variant="outline" color="black" radius="xl">
               <FaArrowRotateLeft /> Re-record
             </Button>
-            <Link href={"/User/Dashboard"}>
+            <Link className="no-underline" href={"/User/AlmostDone"}>
               <Button variant="filled" radius="xl">
                 Save and continue
               </Button>

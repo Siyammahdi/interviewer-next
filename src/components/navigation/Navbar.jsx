@@ -66,7 +66,7 @@ const Navbar = () => {
               <Link href={"/AdminPanel/Dashboard"} className="no-underline text-gray-500">Dashboard</Link>
             </Menu.Item>
             <Menu.Item >
-              <Link href={"/AdminPanel/InterviewList"} className="no-underline text-gray-500">Interviews</Link>
+              <Link href={"/User/Dashboard"} className="no-underline text-gray-500">Interviews</Link>
             </Menu.Item>
 
             <Menu.Divider />

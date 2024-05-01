@@ -5,12 +5,14 @@ import { FiPlus } from "react-icons/fi";
 import { HiMiniBuildingOffice2 } from "react-icons/hi2";
 import { FaRegEdit } from "react-icons/fa";
 import Image from "next/image";
+import Link from "next/link";
 
 const Dashboard = () => {
   return (
     <div className="max-w-6xl mx-auto my-20">
       <div className="flex gap-16">
         <div className="w-2/3">
+          <Link href={"/AdminPanel/InterviewList"} className="no-underline text-gray-800">
           <div className="shadow-md p-4 bg-gray-100 rounded-xl mb-5">
             <div className="">
               <Title className="text-blue-400" order={5}>
@@ -62,6 +64,7 @@ const Dashboard = () => {
               </div>
             </div>
           </div>
+          </Link>
           <div className="shadow-md p-4 bg-gray-100 rounded-xl">
             <div className="">
               <Title className="text-blue-400" order={5}>
