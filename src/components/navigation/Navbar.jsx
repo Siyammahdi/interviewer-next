@@ -21,7 +21,6 @@ const Navbar = () => {
   return (
     <nav className="flex items-center justify-between my-6">
       <Image src={logo} alt="logo"></Image>
-      {/* <Image radius="md" h={25} src="/logo.png" /> */}
       <div className="relative" style={{ width: "45%", cursor: "pointer" }}>
         <TextInput size="md" radius="xl" placeholder="Search your job..." />
         <IoSearch className="absolute border top-1/3 right-5 text-xl text-gray-500" />
