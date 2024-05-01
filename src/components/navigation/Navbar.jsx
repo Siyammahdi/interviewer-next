@@ -7,14 +7,6 @@ import logo from "../../../public/logo.png";
 import { FiPlus } from "react-icons/fi";
 import { FaRegBell } from "react-icons/fa6";
 import { Menu, Button, Text, rem } from '@mantine/core';
-import {
-  IconSettings,
-  IconSearch,
-  IconPhoto,
-  IconMessageCircle,
-  IconTrash,
-  IconArrowsLeftRight,
-} from '@tabler/icons-react';
 import Link from "next/link";
 
 const Navbar = () => {
