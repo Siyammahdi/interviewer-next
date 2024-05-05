@@ -9,9 +9,7 @@ import Layout from "@/components/layout/layout";
 import Section from "@/components/section";
 
 export default function Home() {
-  return (
-    <div className="max-w-6xl mx-auto">
-      <Layout>
+  return (<>
         <Hero />
         <ExploreSection />
         <div className="bg-bgPrimary py-10">
@@ -27,7 +25,10 @@ export default function Home() {
           </div>
         </div>
         {/* <AnswerText /> */}
-      </Layout>
-    </div>
+    </>
   );
 }
+
+Home.getLayout =  (page: JSX.Element) => {
+  return <Layout>{page}</Layout>;
+};

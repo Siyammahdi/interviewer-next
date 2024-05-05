@@ -12,9 +12,11 @@ const theme = createTheme({
 });
 
 export default function App({ Component, pageProps }: AppProps) {
-  return (
-      <MantineProvider theme={theme}>
-        <Component {...pageProps} />
-      </MantineProvider>
-  );
+    // If page layout is available, use it. Else return the page
+    // @ts-ignore
+    const getLayout = Component?.getLayout || ((page: JSX.Element) => page);
+
+    return <MantineProvider theme={theme}>
+            {getLayout(<Component {...pageProps} />)};
+        </MantineProvider>
 }
